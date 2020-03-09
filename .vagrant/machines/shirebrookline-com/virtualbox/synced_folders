@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/shirebrookline.com":{"type":null,"mount_options":["uid=1000","gid=1000"],"guestpath":"/home/vagrant/shirebrookline.com","hostpath":"/Users/ubuntu/projects/shirebrookline.com","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/ubuntu/projects/shirebrookline.com","disabled":false,"__vagrantfile":true}}}
