@@ -2,11 +2,22 @@
 
 /* import the necessary Bootstrap files */
 @import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
 
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Big+Shoulders+Display|Raleway|Nunito|Lora|Inconsolata&display=swap');
 /* -------begin customization-------- */
-$khaki:   #f6eb8f !default;
+
+// These are the defaults, but you can override any values
+$font-family-sans-serif: "Raleway", -apple-system, system-ui, sans-serif !default;
+$font-family-serif: "Lora", serif !default;
+$font-family-monospace: "Inconsolata", monospace !default;
+$font-family-cursive: "Big Shoulders Display", cursive !default;
+$font-family-logo: "Nothing You Could Do", cursive !default;
+$font-family-base: $font-family-sans-serif !default;
+
+
+$khaki: #f6eb8f !default;
 $brand-blue: #41e9d1 !default;
+$brand-red: #d40e0e !default;
 // $body-color: $brand-blue;
 $body-bg: $brand-blue;
 
@@ -16,5 +27,30 @@ $theme-colors: (
 );
 /* -------end customization-------- */
 
+.logo-hero {
+    .main {
+        font-size: 8rem;
+        justify-content: center;
+
+        .logo {
+            font-family: $font-family-logo;
+            text-shadow: 0.3rem 0.4rem 0.5rem $brand-red;
+            color: aqua;
+        }
+
+        .cursive {
+            font-family: $font-family-cursive;
+            font-weight: bold;
+            font-variant: petite-caps;
+        }
+    }
+
+    .slug {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
 /* finally, import Bootstrap to set the changes! */
+@import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/bootstrap';
